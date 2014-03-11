@@ -13,8 +13,45 @@ h2 {
 	padding-bottom: 5px; margin-bottom: 20px; border-bottom: 2px solid #eeeeee; font:1.8em 'Lato';
 }
 
+ul {
+	list-style-type: none;
+}
+
+label {
+	display: none;
+}
+
+input, button {
+	height: 35px; padding: 0 10px; border-radius: 5px; font:0.9em 'Lato';
+}
+
+input {
+	margin-bottom: 10px; background: #eeeeee; color: #5d5d5d; text-shadow: 1px 1px #ffffff;
+}
+
+button {
+	background: #b7e4ef; color: #ffffff; font-weight: bold; text-shadow: 1px 1px 0 #a5bfc5;
+}
+
+ul.selections li {
+	margin: 0 1px 1px 0; float: left;
+}
+
+ul.selections li:nth-child(4), ul.selections li:nth-child(8), ul.selections li:nth-child(12) {
+	margin-right: 0;
+}
+
+ul.selections li a {
+	width: 100px; height: 100px; display: block; background: #b7e4ef; opacity: 0.5;
+	-webkit-transition: opacity 1s;
+}
+
+ul.selections li a:hover {
+	opacity: 1.0;
+}
+
 html {
-	background: #e6e6e6; color: #5d5d5d;
+	background: #e6e6e6; font: 1.0em Arial, Verdana, Tahoma; color: #5d5d5d;
 }
 
 header {

@@ -1,6 +1,7 @@
 <form>
 	<label>Brukernavn</label>
-	<input type="text" placeholder="Brukernavn..">
+	<input name="username" type="text" placeholder="E-post..">
 	<label>Passord</label>
-	<input type="text" placeholder="Passord..">
+	<input name="password" type="password" placeholder="Passord..">
+	<button name="submit" type="submit">Logg inn</button>
 </form>

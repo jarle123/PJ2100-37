@@ -4,19 +4,22 @@ class frontpage
 {
 	function showPage()
 	{
-		// Head
-		echo '<h2>Utvalg</h2>';
-
 		// Get models
 		require 'model/selection.php';
+
+		// Head
+		echo '<h2>Utvalg</h2>';
 
 		// Create object
 		$selection = new Selection();
 
+		echo '<ul class="selections">';
 		$posts = $selection->getSelections();
 
-		$properties = get_object_vars($posts);
-		echo $properties['name'];
+		foreach ($posts as &$post) {
+			require 'view/_selection.php';
+		}
+		echo '</ul>';
 	}
 }
 
