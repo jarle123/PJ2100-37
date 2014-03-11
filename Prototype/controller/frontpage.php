@@ -11,12 +11,11 @@ class frontpage
 		echo '<h2>Utvalg</h2>';
 
 		// Create object
-		$selection = new Selection();
+		$selectionClass = new Selection();
 
 		echo '<ul class="selections">';
-		$posts = $selection->getSelections();
-
-		foreach ($posts as &$post) {
+		$selections = $selectionClass->getSelections();
+		foreach ($selections as &$selection) {
 			require 'view/_selection.php';
 		}
 		echo '</ul>';

@@ -1,6 +1,4 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !^/public/css/ [NC]
-RewriteCond %{REQUEST_URI} !^/public/img/ [NC]
-RewriteCond %{REQUEST_URI} !^/public/js/ [NC]
+RewriteCond %{REQUEST_URI} !/public/
 RewriteRule ^(.*)$ index.php?url=$1 [QSA]

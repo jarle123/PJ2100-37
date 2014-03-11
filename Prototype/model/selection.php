@@ -4,8 +4,8 @@ class Selection
 {
 	// Returns 
 	function getSelections() {
-		$database = new PDO("mysql:host=localhost;dbname=test", 'root', '');
-		$sql = $database->prepare("SELECT * FROM selections");
+		global $database;
+		$sql = $database->prepare("SELECT * FROM selection");
 		$sql->setFetchMode(PDO::FETCH_OBJ);
 		$sql->execute();
 

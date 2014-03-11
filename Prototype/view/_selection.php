@@ -1,1 +1,1 @@
-<li><a href="#"><?=$post->name?></a></li>
+<li><a href="#"><?=$selection->abbreviation?></a></li>
