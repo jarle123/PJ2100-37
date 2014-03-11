@@ -1,0 +1,32 @@
+* {
+	padding: 0; margin: 0; border: 0;
+}
+
+h2 {
+	padding-bottom: 5px; margin-bottom: 20px; border-bottom: 2px solid #eeeeee; font:2.5em 'Lato';
+}
+
+a {
+	color: #5d5d5d;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+label {
+	display: none;
+}
+
+input, button {
+	height: 35px; padding: 0 10px; border-radius: 5px; font:1.3em 'Lato';
+}
+
+input {
+	margin-bottom: 10px; background: #eeeeee; color: #5d5d5d; text-shadow: 1px 1px #ffffff;
+}
+
+button {
+	background: #b7e4ef; color: #ffffff; font-weight: bold; text-shadow: 1px 1px 0 #a5bfc5;
+}

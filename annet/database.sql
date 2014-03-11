@@ -14,6 +14,7 @@ CREATE TABLE selection
 	name varchar(100) NOT NULL,
 	abbreviation varchar(20),
 	description text,
+	logo varchar(50),
 	CONSTRAINT selection_id_pk
 		PRIMARY KEY(id)
 );

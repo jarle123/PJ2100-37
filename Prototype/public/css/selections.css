@@ -1,0 +1,26 @@
+ul.selections li {
+	margin: 0 1px 1px 0; float: left;
+}
+
+ul.selections li:nth-child(4), ul.selections li:nth-child(8), ul.selections li:nth-child(12) {
+	margin-right: 0;
+}
+
+ul.selections li a {
+	width: 100px; height: 100px; display: block; background-color: #b7e4ef;
+	background-size: 60px; background-position: center 10px; background-repeat: no-repeat;
+	font: 1.2em 'Lato'; color: #ffffff; text-align: center; font-weight: bold; line-height: 168px;
+	-webkit-transition: background-color 1s;
+}
+
+ul.selections li a:hover {
+	background-color: #000000;
+}
+
+ul.selections li:nth-child(1) a {
+	border-top-left-radius: 5px;
+}
+
+ul.selections li:nth-child(4) a {
+	border-top-right-radius: 5px;
+}

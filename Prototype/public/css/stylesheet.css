@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(standard.css);
+@import url(userbox.css);
+@import url(activitybox.css);
+@import url(selections.css);
+
+html {
+	background: #e6e6e6; font: 0.75em Arial, Verdana, Tahoma; color: #5d5d5d;
+}
+
+header {
+	display: none;
+}
+
+#horizon {
+	width: 100%; height: 0; position: absolute; top: 50%; background: #ffffff;
+}
+
+#wrap {
+	width: 1063px; height: 500px; margin: -250px 0 0 -532px; position: absolute; left: 50%;
+}
+
+section {
+	height: 460px; padding: 20px; float: left; background: #ffffff; box-shadow: 3px 3px 4px #d6d6d6;
+}
+
+#userbox, #content {
+	margin-right: 20px;
+}
+
+#userbox {
+	width: 200px;
+}
+
+#content {
+	width: 403px;
+}
+
+#activitybox {
+	width: 300px;
+}
+
+footer {
+	display: none;
+}

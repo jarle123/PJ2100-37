@@ -1,6 +1,6 @@
 
 			</section>
-			<section id="activities">
+			<section id="activitybox">
 <?php
 // Initiate controller for user box
 require 'controller/activitybox.php';
@@ -11,7 +11,6 @@ echo $controller->showActivityBox();
 		</div>
 	</div>
 	<footer>
-
 	</footer>
 </body>
 </html>

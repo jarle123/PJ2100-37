@@ -3,6 +3,9 @@
 // Config
 require 'config.php';
 
+// Help class
+require 'model/help.php';
+
 // Set frontpage file
 if(empty($_GET['url']))
 	$_GET['url'] = 'frontpage';
