@@ -1,7 +1,7 @@
-<form>
+<form method="post">
 	<label>Brukernavn</label>
-	<input name="username" type="text" placeholder="E-post..">
+	<input name="email" type="text" placeholder="E-post..">
 	<label>Passord</label>
 	<input name="password" type="password" placeholder="Passord..">
-	<button name="submit" type="submit">Logg inn</button>
+	<input name="login" type="submit" value="Logg inn">
 </form>

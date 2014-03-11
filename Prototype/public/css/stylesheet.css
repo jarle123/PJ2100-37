@@ -30,6 +30,8 @@ section {
 
 #userbox {
 	width: 200px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 #content {
@@ -38,6 +40,8 @@ section {
 
 #activitybox {
 	width: 300px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 footer {

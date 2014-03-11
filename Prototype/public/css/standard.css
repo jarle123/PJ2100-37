@@ -19,14 +19,14 @@ label {
 	display: none;
 }
 
-input, button {
+input {
 	height: 35px; padding: 0 10px; border-radius: 5px; font:1.3em 'Lato';
 }
 
-input {
+input[type=text], input[type=password] {
 	margin-bottom: 10px; background: #eeeeee; color: #5d5d5d; text-shadow: 1px 1px #ffffff;
 }
 
-button {
-	background: #b7e4ef; color: #ffffff; font-weight: bold; text-shadow: 1px 1px 0 #a5bfc5;
+input[type=submit] {
+	width: auto !important; background: #b7e4ef; color: #ffffff; font-weight: bold; text-shadow: 1px 1px 0 #a5bfc5;
 }

@@ -2,6 +2,7 @@ CREATE TABLE user
 (
 	id int NOT NULL auto_increment,
 	email varchar(100) NOT NULL,
+	password varchar(100) NOT NULL,
 	firstname varchar(50) NOT NULL,
 	surname varchar(50) NOT NULL,
 	CONSTRAINT user_id_pk

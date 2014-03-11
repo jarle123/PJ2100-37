@@ -1,5 +1,5 @@
 #activitybox table {
-	margin: -1px;
+	margin: -2px -1px -1px -1px;
 	border-collapse: separate;
 	border-spacing: 1px 1px;
 }
@@ -8,8 +8,19 @@
 	display: none;
 }
 
+#activitybox table tr td {
+	height: 48px;
+	padding: 0 10px;
+	margin-bottom: 1px;
+	background: #eeeeee;
+}
+
+#activitybox table tr:hover td {
+	background-color: #b7e4ef; color: #ffffff;
+}
+
 #activitybox table tr td:nth-child(1) {
-	max-width: 28px;
+	width: 28px;
 	background-size: 24px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -17,7 +28,15 @@
 }
 
 #activitybox table tr td:nth-child(2) {
-	width: 130px; font-weight: bold;
+	width: 150px; padding: 0; font-weight: bold;
+}
+
+#activitybox table tr td:nth-child(2) a {
+	height: 48px; padding: 0 10px; display: block; line-height: 48px;
+}
+
+#activitybox table tr:hover td:nth-child(2) a {
+	color: #ffffff;
 }
 
 #activitybox table tr td:nth-child(3) {
@@ -38,11 +57,4 @@
 
 #activitybox table tr:last-child td:nth-child(3) {
 	border-bottom-right-radius: 5px;
-}
-
-#activitybox table tr td {
-	height: 48px;
-	padding: 0 10px;
-	margin-bottom: 1px;
-	background: #eeeeee;
 }

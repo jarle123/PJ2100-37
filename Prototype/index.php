@@ -1,21 +1,38 @@
 <?php
+session_start();
 
 // Config
 require 'config.php';
 
-// Help class
+// Models
+require 'model/user.php';
 require 'model/help.php';
+
+// User authentication/authorization
+$userClass = new User();
+if(isset($_POST['login'])) {
+	if($userClass->authenticateUser($_POST['email'], $_POST['password'])) {
+	}
+}
+
+// Log out
+if(isset($_POST['logout'])) {
+	$userClass->logOut();
+}
 
 // Set frontpage file
 if(empty($_GET['url']))
-	$_GET['url'] = 'frontpage';
+	$parameters[0] = 'frontpage';
+else {
+	$parameters = explode('/', $_GET['url']);
+}
 
 // Create filename for controller
-$filename = 'controller/'.$_GET['url'] . '.php';
+$filename = 'controller/'.$parameters[0].'.php';
 
 // Check if controller exists
 if(!file_exists($filename))
-	die("File doesn\'t exist!" );
+	die('File doesn\'t exist!');
 
 // Require controller
 require $filename;
@@ -24,7 +41,7 @@ require $filename;
 require 'view/header.php';
 
 // Initiate controller
-$classname = $_GET['url'];
+$classname = $parameters[0];
 $controller = new $classname();
 echo $controller->showPage();
 
