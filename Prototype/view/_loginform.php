@@ -1,4 +1,4 @@
-<form method="post">
+<form method="post" autocomplete="off">
 	<label>Brukernavn</label>
 	<input name="email" type="text" placeholder="E-post..">
 	<label>Passord</label>

@@ -2,6 +2,20 @@
 
 class Activity
 {
+
+	function getActivity($id = null) {
+		global $database;
+		$sql = $database->prepare("
+			SELECT * FROM activity WHERE id = $id
+		");
+		$sql->setFetchMode(PDO::FETCH_OBJ);
+		$sql->execute();
+
+		$data = $sql->fetch();
+
+		return $data;
+	}
+
 	// Returns 
 	function getActivities() {
 		global $database;

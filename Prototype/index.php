@@ -6,9 +6,8 @@ require 'config.php';
 
 // Models
 require 'model/user.php';
+require 'model/activity.php';
 require 'model/miscelaneous.php';
-
-$dlog = '';
 
 // User authentication/authorization
 $userClass = new User();

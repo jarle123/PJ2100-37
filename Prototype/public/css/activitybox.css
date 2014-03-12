@@ -23,7 +23,11 @@
 }
 
 #activitybox table tr td:nth-child(2) a {
-	height: 48px; padding: 0 10px; display: block; line-height: 48px;
+	height: 48px; padding: 0 10px; display: block; line-height: 48px; font-size: 0.9em;
+}
+
+#activitybox table tr td:nth-child(2) a span {
+	display: block;
 }
 
 #activitybox table tr:hover td:nth-child(2) a {

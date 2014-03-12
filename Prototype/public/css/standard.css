@@ -3,11 +3,16 @@
 }
 
 h2 {
-	padding-bottom: 5px; margin-bottom: 20px; border-bottom: 2px solid #eeeeee; font:2.5em 'Lato';
+	padding-bottom: 5px; margin-bottom: 20px; border-bottom: 2px solid #eeeeee; font:2.6em 'Lato';
 }
 
 a {
 	color: #5d5d5d; text-decoration: none;
+}
+
+p {
+	text-align: justify;
+	line-height: 2.2em;
 }
 
 ul {
@@ -19,7 +24,7 @@ label {
 }
 
 input {
-	height: 35px; padding: 0 10px; border-radius: 5px; font:1.3em 'Lato';
+	height: 35px; padding: 0 10px; border-radius: 5px; font:1.4em 'Lato';
 }
 
 input[type=text], input[type=password] {

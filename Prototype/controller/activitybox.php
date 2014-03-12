@@ -3,9 +3,6 @@
 class ActivityBox
 {
 	function showActivityBox() {
-		// Get models
-		require 'model/activity.php';
-
 		// Head
 		echo '<h2>Aktiviteter</h2>';
 
