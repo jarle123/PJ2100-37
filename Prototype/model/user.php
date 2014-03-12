@@ -33,6 +33,7 @@ class User
 	}
 
 	function logOut() {
+		unset($_SESSION);
 		session_destroy();
 
 		return true;

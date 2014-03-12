@@ -2,7 +2,7 @@
 
 class Selection
 {
-	function getSelection($id) {
+	function getSelection($id = null) {
 		global $database;
 		$sql = $database->prepare("
 			SELECT * FROM selection WHERE id = $id

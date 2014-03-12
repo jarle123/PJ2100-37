@@ -6,7 +6,9 @@ require 'config.php';
 
 // Models
 require 'model/user.php';
-require 'model/help.php';
+require 'model/miscelaneous.php';
+
+$dlog = '';
 
 // User authentication/authorization
 $userClass = new User();
@@ -21,10 +23,14 @@ if(isset($_POST['logout'])) {
 }
 
 // Set frontpage file
+$parameters = array("", 0);
 if(empty($_GET['url']))
 	$parameters[0] = 'frontpage';
 else {
 	$parameters = explode('/', $_GET['url']);
+	if($parameters[0] == 'selection' || $parameters[0] == 'activity') {
+		$parameters[0] .= 'controller';
+	}
 }
 
 // Create filename for controller

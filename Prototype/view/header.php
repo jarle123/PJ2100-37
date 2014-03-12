@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title><?=PAGE_TITLE?></title>
-	<link rel="stylesheet" type="text/css" href="public/css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="/PJ2100-37.git/prototype/public/css/stylesheet.css">
 </head>
 <body>
 	<header>

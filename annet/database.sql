@@ -5,6 +5,7 @@ CREATE TABLE user
 	password varchar(100) NOT NULL,
 	firstname varchar(50) NOT NULL,
 	surname varchar(50) NOT NULL,
+	usergroup int NOT NULL default 0,
 	CONSTRAINT user_id_pk
 		PRIMARY KEY(id)
 );
@@ -26,7 +27,7 @@ CREATE TABLE activity
 	selection_id int NOT NULL,
 	name varchar(100) NOT NULL,
 	description text,
-	time DATE,
+	time DATETIME,
 	CONSTRAINT activity_id_pk
 		PRIMARY KEY(id),
 	CONSTRAINT activity_selection_id_fk
@@ -37,7 +38,7 @@ CREATE TABLE user_selection
 (
 	user_id int NOT NULL,
 	selection_id int NOT NULL,
-	isadmin int NOT NULL default 0,
+	usergroup int NOT NULL default 0,
 	CONSTRAINT user_selection_user_id_selection_id_pk
 		PRIMARY KEY(user_id, selection_id),
 	CONSTRAINT user_selection_user_id_fk
@@ -50,7 +51,7 @@ CREATE TABLE user_activity
 (
 	user_id int NOT NULL,
 	activity_id int NOT NULL,
-	isadmin int DEFAULT 0,
+	usergroup int DEFAULT 0,
 	CONSTRAINT user_activity_user_id_activity_id_pk
 		PRIMARY KEY(user_id, activity_id),
 	CONSTRAINT user_activity_user_id_fk
