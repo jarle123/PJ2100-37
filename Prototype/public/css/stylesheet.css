@@ -5,11 +5,27 @@
 @import url(selections.css);
 
 html {
-	background: #e6e6e6; font: 0.75em Arial, Verdana, Tahoma; color: #5d5d5d;
+	background: #e6e6e6; font: 0.75em Tahoma, Arial, Verdana; color: #5d5d5d;
 }
 
 header {
 	display: none;
+}
+
+@-webkit-keyframes message {
+	0%		{ opacity: 0; }
+	20%		{ opacity: 1; }
+	80%		{ opacity: 1; }
+	100%	{ opacity: 0; }
+}
+
+#message {
+	width: 100%; position: absolute; background: #b7e4ef; color: #ffffff; font:1.6em 'Lato'; font-weight: bold; text-shadow: 1px 1px 0 #a5bfc5;
+	opacity: 0; -webkit-animation: message 5s linear ;
+}
+
+#message p {
+	width: 987px; padding:20px 20px 20px 56px; margin: 0 auto; background-image: url(../img/check_icon.png); background-size: 36px; background-repeat: no-repeat; background-position: center left;
 }
 
 #horizon {

@@ -6,10 +6,11 @@ ul.selections li:nth-child(4), ul.selections li:nth-child(8), ul.selections li:n
 	margin-right: 0;
 }
 
-ul.selections li a {
+ul.selections li a, ul.selections li img {
 	width: 100px; height: 100px; display: block; background-color: #b7e4ef;
 	background-size: 50px; background-position: center 15px; background-repeat: no-repeat;
 	font: 1.2em 'Lato'; color: #ffffff; text-align: center; font-weight: bold; line-height: 168px;
+	text-shadow: 1px 1px 0 #a5bfc5;
 	-webkit-transition: background-color 1s;
 }
 

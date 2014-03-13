@@ -13,12 +13,16 @@ require 'model/miscelaneous.php';
 $userClass = new User();
 if(isset($_POST['login'])) {
 	if($userClass->authenticateUser($_POST['email'], $_POST['password'])) {
+		$message = 'Du er nå logget inn!';
+	} else {
+		$message = 'Feil brukernavn eller passord!';
 	}
 }
 
 // Log out
 if(isset($_POST['logout'])) {
 	$userClass->logOut();
+	$message = 'Du er nå logget ut!';
 }
 
 // Set frontpage file
