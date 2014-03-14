@@ -1,3 +1,38 @@
 #userbox input { 
 	width: 180px;
 }
+
+#userbox dl dt {
+	display: none;
+}
+
+#userbox dl dd:nth-child(2), #userbox dl dd:nth-child(4) {
+	padding: 10px; background: #eeeeee;
+}
+
+#userbox dl dd:nth-child(2) {
+	padding-bottom: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; font-weight: bold;
+}
+
+#userbox dl dd:nth-child(4) {
+	border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+}
+
+#userbox dl dd:nth-child(6) {
+	margin-right: 10px; background-image: url(../img/icons/selection.png);
+}
+
+#userbox dl dd:nth-child(8) {
+	background-image: url(../img/icons/activity.png);
+}
+
+#userbox dl dd:nth-child(6), #userbox dl dd:nth-child(8) {
+	width: 50px; height: 35px; padding-right:10px; margin-top: 10px; float: left; 
+	background-color: #b7e4ef; background-size: 24px; background-repeat: no-repeat; background-position: 10px center;
+	border-radius: 5px; text-align: right; font:1.3em 'Lato'; color: #ffffff;
+	text-shadow: 1px 1px 0 #a5bfc5; font-weight: bold; line-height: 35px;
+}
+
+#logout {
+	position: absolute;	bottom: 20px;
+}
